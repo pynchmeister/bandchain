@@ -15,6 +15,7 @@
 
 ### Chain (Non-consensus)
 
+- (Impv) [\#2387](https://github.com/bandprotocol/bandchain/pull/2387) Implementation of allow free report transaction.
 - (docs) [\#2344](https://github.com/bandprotocol/bandchain/pull/2344) Improve code comments in module.go / msg.go / params.go.
 - (impv) [\#2345](https://github.com/bandprotocol/bandchain/pull/2345) Update proof struct comment.
 - (impv) [\#2332](https://github.com/bandprotocol/bandchain/pull/2232) Emit gas used as an attribute event during prepare and execute.
