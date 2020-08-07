@@ -70,7 +70,7 @@ module Styles = {
           fontSize(`px(8)),
           letterSpacing(`em(0.07)),
           lineHeight(`em(1.14)),
-          Media.smallMobile([fontSize(px(7))]),
+          Media.smallMobile([fontSize(`px(7))]),
         ])
       | Sm =>
         style([

@@ -8,6 +8,7 @@ type t =
   | Height(ID.Block.t)
   | Coin(coin_amount_t)
   | Count(int)
+  | DataSources(ID.DataSource.t, string)
   | Float(float, option(int))
   | Percentage(float, option(int))
   | Timestamp(MomentRe.Moment.t)
@@ -70,6 +71,12 @@ let make = (~info) => {
     />
   | Coin({value, hasDenom}) =>
     <AmountRender coins=value pos={hasDenom ? AmountRender.TxIndex : Fee} />
+  | DataSources(id, name) =>
+    <div className=Styles.vFlex>
+      <TypeID.DataSource id />
+      <HSpacing size=Spacing.sm />
+      <Text value=name />
+    </div>
   | Text(text) =>
     <Text
       value=text
